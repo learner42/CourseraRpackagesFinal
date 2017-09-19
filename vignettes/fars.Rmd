@@ -1,0 +1,28 @@
+---
+title: "Detailed information about the fars R package"
+author: "Coursera Learner 42"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This package provides essential function to analyse the FARS (Fatality Analysis Reporting System) dataset
+
+## Map the accidents
+
+The accidents happening in a state in a given year can be mapped thanks to the `fars_map_state` function:
+
+```{r, fig.show='hold'}
+fars_map_state(1, 2013)
+```
+
+## Dataset summary
+
+The total records from each years can be obtained via the `fars_summarize_years` function:
+
+```{r}
+fars_summarize_years(c(2013,2014))
+```

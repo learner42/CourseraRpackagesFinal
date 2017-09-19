@@ -16,7 +16,7 @@
 #' @export
 fars_read <- function(filename) {
         if(!file.exists(filename))
-                stop("file '", filename, "' does not exist")
+                stop("file '", filename, "' does not exist in the working directory: ", getwd())
         data <- suppressMessages({
                 readr::read_csv(filename, progress = FALSE)
         })
@@ -34,7 +34,6 @@ fars_read <- function(filename) {
 #' @examples
 #'   make_filename(2007)
 #'
-#' @export
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -54,7 +53,6 @@ make_filename <- function(year) {
 #' @examples
 #'   fars_read_years(c(2013,2014))
 #'
-#' @export
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)
