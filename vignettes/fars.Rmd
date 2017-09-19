@@ -21,6 +21,7 @@ library(magrittr)
 The accidents happening in a state in a given year can be mapped thanks to the `fars_map_state` function:
 
 ```{r, fig.show='hold'}
+setwd(system.file("extdata", package="CourseraRpackagesFinal"))
 fars_map_state(1, 2013)
 ```
 
@@ -29,5 +30,6 @@ fars_map_state(1, 2013)
 The total records from each years can be obtained via the `fars_summarize_years` function:
 
 ```{r}
+setwd(system.file("extdata", package="CourseraRpackagesFinal"))
 fars_summarize_years(c(2013,2014))
 ```
