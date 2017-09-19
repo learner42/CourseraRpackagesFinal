@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/learner42/CourseraRpackagesFinal.svg?branch=master)](https://travis-ci.org/learner42/CourseraRpackagesFinal)
+
 ---
 output: github_document
 ---
