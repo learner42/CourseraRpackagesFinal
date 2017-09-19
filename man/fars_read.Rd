@@ -21,5 +21,7 @@ If the input file does not exists, an error will be thrown with the message
     "file <requested_file> does not exists"
 }
 \examples{
-  fars_read("data/my_fars_data.csv")
+\dontrun{
+  fars_read("accident_2013.csv.bz2")
+}
 }

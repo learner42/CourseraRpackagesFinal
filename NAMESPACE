@@ -2,10 +2,6 @@
 
 export(fars_map_state)
 export(fars_read)
+export(fars_read_years)
 export(fars_summarize_years)
-importFrom("dplyr::bind_rows","dplyr::group_by")
-importFrom("dplyr::bind_rows","dplyr::summarize")
-importFrom("dplyr::bind_rows","tidyr::spread")
-importFrom("dplyr::mutate","dplyr::select")
-importFrom("maps::map","graphics::points")
-importFrom("readr::read_csv","dplyr::tbl_df")
+export(make_filename)

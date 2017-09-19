@@ -18,9 +18,8 @@ This function takes some years as input and return a dataframe showing the numbe
 each year
 }
 \examples{
+\dontrun{
   fars_summarize_years(c(2013,2014)
-  The result should look like
+}
 
-        2013    2014
- n     97987  121313
 }

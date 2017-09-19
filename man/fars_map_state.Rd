@@ -23,3 +23,8 @@ If the state.num is invalid an error will be thrown specifying this
     a invisible NULL is returned
   If there is some data, points representing where the accidents occur is shown on a map
 }
+\examples{
+\dontrun{
+  fars_map_state(1, 2013)
+}
+}
